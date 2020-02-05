@@ -1,0 +1,4 @@
+tag_data.csv共两列：第一列为tid，即tag的编号；第二列为tname，即tag的名称。
+video_data.csv共两列：第一列为aid，即视频aid；第二列为tag_list，为该视频所有tid（tag编号）组成的字符串，用逗号连接，没有tag的视频这项列为空。
+
+包含截止到18年7月19日凌晨4点的所有视频信息
