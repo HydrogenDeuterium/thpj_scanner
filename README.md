@@ -8,7 +8,7 @@ api：
 视频信息（全）
 https://api.bilibili.com/x/web-interface/view?aid={aid}
 输出：json格式
-```json
+```
 {'code': 0,//0表明稿件状态正常
  'message': '0',
  'ttl': 1,
@@ -76,7 +76,7 @@ https://api.bilibili.com/x/web-interface/view?aid={aid}
 https://api.bilibili.com/x/web-interface/archive/stat?aid={aid}
   输出： JSON格式如下
 
-```json
+```
 "data":
       {
             "aid": "av号",
@@ -96,7 +96,7 @@ https://api.bilibili.com/x/web-interface/archive/stat?aid={aid}
 tag信息
 https://api.bilibili.com/x/tag/archive/tags?aid={aid}
 输出： JSON格式如下`
-```json
+```
 "data": [
     {
           "tag_id": "tag编号",
@@ -126,7 +126,7 @@ https://api.bilibili.com/x/tag/archive/tags?aid={aid}
 https://api.bilibili.com/x/article/viewinfo?id={article_id}
 输出： JSON格式如下（无中文解释者为未知）
 
-```json
+```
 {
     code: 0,
     data: {
