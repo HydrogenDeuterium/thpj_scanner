@@ -164,17 +164,14 @@ https://api.bilibili.com/x/article/viewinfo?id={article_id}
     ttl: 1
 }
 ```
-ps:https://api.bilibili.com/x/web-interface/article/early?jsonp=jsonp&aid= 
-可以用于获取专栏作者信息 
+ps:
 
-https://api.bilibili.com/x/article/more?aid= 
-可以用于获取作者更多专栏 
-
-https://space.bilibili.com/ajax/Bangumi/getList?mid= 
-订阅番剧 
-
-https://space.bilibili.com/ajax/tags/getSubList?mid= 
-订阅标签
+|||
+|:---:|:---:|
+|https://api.bilibili.com/x/web-interface/article/early?jsonp=jsonp&aid= |可以用于获取专栏作者信息 |
+|https://api.bilibili.com/x/article/more?aid= |可以用于获取作者更多专栏 |
+|https://space.bilibili.com/ajax/Bangumi/getList?mid= |订阅番剧 |
+|https://space.bilibili.com/ajax/tags/getSubList?mid= |订阅标签|
 
 
-部分信息来自https://github.com/uupers/BiliSpider/wiki/
+部分信息来自 https://github.com/uupers/BiliSpider/wiki/
