@@ -1,11 +1,18 @@
-前言：参考https://docs.google.com/document/d/1qrRvYhFaQgu3yoasjF70wSuT9DSoku-NwqvnHFwZx7k/edit?usp=sharing
+## TODOLIST:
+1.东方视频专栏的爬取（需要找到tag对应的api以确定相关专栏）
+
+2.全站视频的数据，包含[av号，投稿日期，点击，弹幕，回复，收藏，硬币]，工作量较大
+
+3.东方up信息，约全越好，包含投稿信息
+## 前言：
+参考https://docs.google.com/document/d/1qrRvYhFaQgu3yoasjF70wSuT9DSoku-NwqvnHFwZx7k/edit?usp=sharing
 
 数据来源：霜落xss.b站tag数据.链接：https://pan.baidu.com/s/1a5VWG1ps8Sztlo-wQemOAA 密码：6q1k
 内含至2018年7月19日凌晨4点以来，b站所有视频的tag信息与tag名称与tag_id的对照表。
 
 
-api：
-视频信息（全）
+## api：
+### 视频信息（全）
 https://api.bilibili.com/x/web-interface/view?aid={aid}
 输出：json格式
 ```
@@ -72,10 +79,9 @@ https://api.bilibili.com/x/web-interface/view?aid={aid}
 ```
 
 
-视频信息（精简）
+### 视频信息（精简）
 https://api.bilibili.com/x/web-interface/archive/stat?aid={aid}
   输出： JSON格式如下
-
 ```
 "data":
       {
@@ -93,7 +99,7 @@ https://api.bilibili.com/x/web-interface/archive/stat?aid={aid}
       }
 ```
 
-tag信息
+### tag信息
 https://api.bilibili.com/x/tag/archive/tags?aid={aid}
 输出： JSON格式如下`
 ```
@@ -122,10 +128,9 @@ https://api.bilibili.com/x/tag/archive/tags?aid={aid}
 ]
 ```
 
-专栏
+### 专栏
 https://api.bilibili.com/x/article/viewinfo?id={article_id}
 输出： JSON格式如下（无中文解释者为未知）
-
 ```
 {
     code: 0,
@@ -164,8 +169,7 @@ https://api.bilibili.com/x/article/viewinfo?id={article_id}
     ttl: 1
 }
 ```
-ps:
-
+### 其它api:
 |||
 |:---:|:---:|
 |https://api.bilibili.com/x/web-interface/article/early?jsonp=jsonp&aid= |可以用于获取专栏作者信息 |
@@ -174,4 +178,5 @@ ps:
 |https://space.bilibili.com/ajax/tags/getSubList?mid= |订阅标签|
 
 
-部分信息来自 https://github.com/uupers/BiliSpider/wiki/
+### 部分信息来自
+ https://github.com/uupers/BiliSpider/wiki/
