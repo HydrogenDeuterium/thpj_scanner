@@ -4,12 +4,16 @@
 2.全站视频的数据，包含[av号，投稿日期，点击，弹幕，回复，收藏，硬币]，工作量较大
 
 3.东方up信息，越全越好，包含视频和专栏的投稿信息
+
+4.知乎数据的挖掘与处理
+
 ## 前言：
 参考https://docs.google.com/document/d/1qrRvYhFaQgu3yoasjF70wSuT9DSoku-NwqvnHFwZx7k/edit?usp=sharing
 
 数据来源：霜落xss.b站tag数据.链接：https://pan.baidu.com/s/1a5VWG1ps8Sztlo-wQemOAA 密码：6q1k
 内含至2018年7月19日凌晨4点以来，b站所有视频的tag信息与tag名称与tag_id的对照表。
 
+挖掘到的数据主要供@Akyuu1997处理。感谢@Akyuu1997
 
 ## api：
 ### 视频信息（全）
