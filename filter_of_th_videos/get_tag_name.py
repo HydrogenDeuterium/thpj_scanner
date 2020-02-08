@@ -14,12 +14,13 @@ github:https://github.com/HydrogenDeuterium
 """
 import csv
 
-
 # with open("th_videos.csv","r")as f:
 #     csv_reader=csv.reader(f)
 #     p=list(csv_reader)
 # with open("b站tag数据_180719/video_tag_seq.csv","r") as g:
 #     csv_reader=csv.reader(f)
+import time
+
 
 def sImport(dir):
     with open(dir, "r")as f:
@@ -37,7 +38,7 @@ print("tag data imported.\n")
 t2n_dict = dict(tag2name)
 print("tag data encoded.\n")
 
-with open("th_video_tags_200208.csv", "w+", newline="")as f:
+with open("th_video_tags_%.csv" % time.strftime("%y%m%d"), "w+", newline="")as f:
     csv_writer = csv.writer(f)
     for line in video_list:
         vid = line[0]
