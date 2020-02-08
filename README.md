@@ -3,7 +3,7 @@
 
 2.全站视频的数据，包含[av号，投稿日期，点击，弹幕，回复，收藏，硬币]，工作量较大
 
-3.东方up信息，约全越好，包含投稿信息
+3.东方up信息，越全越好，包含视频和专栏的投稿信息
 ## 前言：
 参考https://docs.google.com/document/d/1qrRvYhFaQgu3yoasjF70wSuT9DSoku-NwqvnHFwZx7k/edit?usp=sharing
 
