@@ -26,7 +26,7 @@ def sImport(dir):
         return list(csv.reader(f))
 
 
-video_list = sImport("th_videos.csv")
+video_list = sImport("b站tag数据_180719/th_videos.csv")
 print("video data imported.\n")
 video2tag = sImport("b站tag数据_180719/video_tag_seq.csv")
 print("tid data imported.\n")
@@ -37,7 +37,7 @@ print("tag data imported.\n")
 t2n_dict = dict(tag2name)
 print("tag data encoded.\n")
 
-with open("th_video_tags.csv", "w+", newline="")as f:
+with open("th_video_tags_200208.csv", "w+", newline="")as f:
     csv_writer = csv.writer(f)
     for line in video_list:
         vid = line[0]
@@ -47,5 +47,5 @@ with open("th_video_tags.csv", "w+", newline="")as f:
         else:
             tid_list = tid.split(",")
         tags = [t2n_dict[tid] for tid in tid_list]
-        csv_writer.writerow([vid] + tags)
+        csv_writer.writerow([vid, tags])
 print("writing finished.")
